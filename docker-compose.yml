@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  server:
+    build:
+      dockerfile: docker/server.Dockerfile
+      context: .
+    restart: always
+
+  client:
+    build:
+      dockerfile: docker/client.Dockerfile
+      context: .
+    restart: always
+    depends_on:
+      - server
+    links:
+      - server
+    environment:
+      - LISTEN_ADDR=server:8080

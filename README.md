@@ -10,6 +10,10 @@ Design and implement “Word of Wisdom” tcp server.
 • After Prof Of Work verification, server should send one of the quotes from “word of wisdom” book or any other collection of the quotes.  
 • Docker file should be provided both for the server and for the client that solves the POW challenge
 
+# Demo
+
+[![asciicast](https://asciinema.org/a/4ShE41NkxZizsUcFb8D6bbayK.svg)](https://asciinema.org/a/4ShE41NkxZizsUcFb8D6bbayK)
+
 # Using
 
 ## Method #1 (Makefile)
